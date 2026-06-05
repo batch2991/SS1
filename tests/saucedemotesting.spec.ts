@@ -14,14 +14,14 @@ test.beforeEach(async ({page})=>{
 
     await login.openUrl(ENV.url)
 })
-test("To validate the count of products", async({page})=>{
+test("To validate the count of products",{tag:'@smoke'}, async({page})=>{
      //await login.login(ENV.uid,ENV.pwd)
      let status=await products.getheading()
      expect(status).toBeTruthy()
      let count=await products.getProductsCount()
      expect(count).toBe(6) 
 })
-test("To validate Prices are in sorting order", async({page})=>{
+test("To validate Prices are in sorting order",{tag:['@smoke','@regression']}, async({page})=>{
      //await login.login(ENV.uid,ENV.pwd)
      let status=await products.getheading()
      expect(status).toBeTruthy()
@@ -38,7 +38,7 @@ test("To validate Prices are in sorting order", async({page})=>{
      }
      expect(flag).toBeTruthy()
 })
-test("To validate the products added in the cart", async({page})=>{
+test("To validate the products added in the cart",{tag:"@smoke"}, async({page})=>{
      //await login.login(ENV.uid,ENV.pwd)
      let status=await products.getheading()
      expect(status).toBeTruthy()
