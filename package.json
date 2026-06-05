@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:smoke": "npx playwright test --grep @smoke",
-    "test:regression": "npx playwright test --grep @regression",
+    "test": "npx playwright test",
     "posttest": "npx allure-commandline generate ./allure-results --clean -o ./allure-reports && npx allure open ./allure-reports"
   },
   "keywords": [],
