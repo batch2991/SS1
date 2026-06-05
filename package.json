@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "posttest": "npx allure-commandline generate ./allure-results --clean -o ./allure-reports && npx allure open ./allure-reports"
+    "posttest": "npx allure-commandline generate ./allure-results --clean -o ./allure-reports && npx allure open ./allure-reports",
+    "lint": "eslint . --ext .ts,.js",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
