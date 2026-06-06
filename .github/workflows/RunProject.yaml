@@ -1,13 +1,14 @@
 name: Playwright Tests
 
 on:
-   branches:
+  push:
+    branches:
       - master
 
-   schedule:
-    - cron: '0 18 * * 1-5'  
+  schedule:
+    - cron: '0 18 * * 1-5'
 
-   workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   test:
