@@ -22,6 +22,6 @@ export class CartPage extends Base
      async caltotal()
      {
           console.log("fdskflsd")
-          console.log("dfdsfs")
+          console.log("kfdsjflsdjflkdsjfsdklfs")
      } 
 }
