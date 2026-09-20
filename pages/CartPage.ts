@@ -19,9 +19,5 @@ export class CartPage extends Base
      {
           await this.page.locator(this.removebtn).click()          
      }    
-     async caltotal()
-     {
-          console.log("fdskflsd")
-          console.log("dfdsfs")
-     } 
+     
 }

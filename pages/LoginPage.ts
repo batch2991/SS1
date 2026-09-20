@@ -21,6 +21,4 @@ export class LoginPage extends Base
         let msg=await this.page.locator(this.errormsg).textContent()
         return msg
     }
-
-
 }

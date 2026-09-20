@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
-    "posttest": "npx allure generate ./allure-results -o ./allure-reports"
+    "test": "npx playwright test",    
+    "allure:generate": "npx allure generate ./allure-results -o ./allure-reports"  
   },
   "keywords": [],
   "author": "",

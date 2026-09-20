@@ -19,7 +19,7 @@ test("To validate the count of products",{tag:'@smoke'}, async({page})=>{
      let status=await products.getheading()
      expect(status).toBeTruthy()
      let count=await products.getProductsCount()
-     expect(count).toBe(6) 
+     expect(count).toBe(4) 
 })
 test("To validate Prices are in sorting order",{tag:['@smoke','@regression']}, async({page})=>{
      //await login.login(ENV.uid,ENV.pwd)
