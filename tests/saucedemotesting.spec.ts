@@ -2,7 +2,7 @@ import {expect, test} from "@playwright/test"
 import { LoginPage } from "../pages/LoginPage"
 import { ProductsPage } from "../pages/ProductsPage"
 import { CartPage } from "../pages/CartPage"
-import { ENV } from "../playwright.config"
+import { ENV } from "../utils/config"
 
 let login:LoginPage, products:ProductsPage,cart:CartPage
 
