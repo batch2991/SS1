@@ -25,6 +25,7 @@ export default defineConfig({
         reportName: "SauceDemo Automation",
         logo: `data:image/png;base64,${logoBase64}`,
         reportLanguage: "en",
+        singleFile: true,
       },
     },
   },
