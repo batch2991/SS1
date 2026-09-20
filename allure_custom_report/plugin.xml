@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<plugin id="custom-logo-title-plugin">
-    <extensions>
-        <extension point="styles" id="custom-styles" path="styles.css"/>
-    </extensions>
-</plugin>
